@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let year= +prompt("nhập năm");
+    let moth = +prompt("nhập tháng");
+    if(parseInt(year)>0){
+       if(year%4==0&&year%100!=0||year%400==0){
+        if(moth>0&&moth<13&&moth%1==0){
+            if(moth==1||moth==3||moth==5||moth==7||moth==8||moth==10||moth==12){
+                console.log("số ngày trong tháng đó là 31");
+            }else if(moth==2){
+                console.log("số ngày trong tháng đó là 29");
+            }else{
+                console.log("số ngày trong tháng đó là 30");
+            }
+        }else{
+            console.log("không có tháng như vậy");
+        }
+       }else{
+        if(moth==1||moth==3||moth==5||moth==7||moth==8||moth==10||moth==12){
+                console.log("số ngày trong tháng đó là 31");
+            }else if(moth==2){
+                console.log("số ngày trong tháng đó là 28");
+            }else{
+                console.log("số ngày trong tháng đó là 30");
+            }
+       }
+    }else{
+        console.log("không có năm như vậy");
+    }
+</script>
+</html>

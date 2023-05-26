@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = "this is A tEst"
+   let word = a.split(" ");
+   let hello = [];
+   for(i=0;i<word.length;i++){  
+     let words= word[i];
+     let hellos= words.charAt(0).toUpperCase() + words.slice(1).toLowerCase();
+     hello.push(hellos);
+     
+   }  
+   let b = hello.join(" ")
+     console.log(b);
+</script>
+</html>
